@@ -76,8 +76,6 @@ int subarraySum(int* nums, int numsSize, int k) {
     freeMap(&map);
     return count;
 }
-
-// ADD THIS MAIN FUNCTION TO TEST
 int main() {
     int nums[] = {1, 1, 1};
     int k = 2;
