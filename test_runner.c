@@ -1,6 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
-#include "../hashmap.h" 
+#include "hashmap.h" 
 
 extern int subarraySum(int* nums, int numsSize, int k);
 
