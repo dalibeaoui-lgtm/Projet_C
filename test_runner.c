@@ -5,7 +5,7 @@
 extern int subarraySum(int* nums, int numsSize, int k);
 
 int main() {
-    FILE *file = fopen("TESTS/input.txt", "r");
+    FILE *file = fopen("input.txt", "r");
     if (!file) {
         perror("Could not open input.txt");
         return 1;
