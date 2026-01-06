@@ -28,7 +28,7 @@ void run_tests(const char* filename) {
             printf("Test Case %d: FAILED (Expected %d, Got %d)\n", testNum, expected, result);
             free(nums);
             fclose(file);
-            return 1; // <--- TRÈS IMPORTANT : Force la croix rouge en cas d'erreur
+            return 1; 
         }
 
         free(nums);
