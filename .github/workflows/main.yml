@@ -11,8 +11,8 @@ jobs:
         uses: actions/checkout@v3 # Copie vos fichiers code.c et tester.c
 
       - name: Etape 1 - Compilation (Build)
-        # On compile vos fichiers C présents dans le dépôt
-        run: gcc code.c tester.c -o mon_programme 
+        # On ne compile que tester.c car il inclut déjà code.c
+        run: gcc tester.c -o mon_programme
 
       - name: Etape 2 - Execution des Tests
         # On lance automatiquement vos tests unitaires
