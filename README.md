@@ -69,7 +69,7 @@ The solution uses a **Prefix Sum** strategy combined with a **Hash Map** to achi
 Open a terminal in the project directory and run:
 
 ```bash
-gcc -Wall -o subarray_solver solution.c
+gcc -o subarray_solver tester.c
 ```
 
 ### Running the Program
