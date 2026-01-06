@@ -36,7 +36,7 @@ void run_tests(const char* filename) {
 }
 
 int main() {
-    printf("Starting Unit Tests...\n");
+    printf("Bissmilleh...\n");
     run_tests("input.txt");
     return 0;
 }
