@@ -1,19 +1,19 @@
 name: Validation Automatique
 
-on: [push] # Le robot se lance à chaque envoi de code
+on: [push] 
 
 jobs:
   verification:
-    runs-on: ubuntu-latest # Utilise un serveur Linux virtuel
+    runs-on: ubuntu-latest 
     
     steps:
       - name: Recuperer le code
-        uses: actions/checkout@v3 # Copie vos fichiers code.c et tester.c
+        uses: actions/checkout@v3
 
       - name: Etape 1 - Compilation (Build)
-        # On ne compile que tester.c car il inclut déjà code.c
+      
         run: gcc tester.c -o mon_programme
 
       - name: Etape 2 - Execution des Tests
-        # On lance automatiquement vos tests unitaires
+       
         run: ./mon_programme
