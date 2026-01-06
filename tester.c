@@ -11,7 +11,7 @@ void run_tests(const char* filename) {
     int n, k, expected, testNum = 1;
 
     
-    while (fscanf(file, "%d %d", &n, &k) != EOF) {
+    while (fscanf(file, "%d %d", &n, &k) == 2) {
         int* nums = malloc(sizeof(int) * n);
         for (int i = 0; i < n; i++) {
             fscanf(file, "%d", &nums[i]);
