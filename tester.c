@@ -22,10 +22,13 @@ void run_tests(const char* filename) {
         int result = subarraySum(nums, n, k);
 
        
-        if (result == expected) {
-            printf("Test Case %d: PASSED (Expected %d, Got %d)\n", testNum, expected, result);
+    if (result == expected) {
+            printf("Test Case %d: PASSED\n", testNum);
         } else {
             printf("Test Case %d: FAILED (Expected %d, Got %d)\n", testNum, expected, result);
+            free(nums);
+            fclose(file);
+            return 1; // <--- TRÈS IMPORTANT : Force la croix rouge en cas d'erreur
         }
 
         free(nums);
