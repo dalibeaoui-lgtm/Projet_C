@@ -23,12 +23,11 @@ void run_tests(const char* filename) {
 
        
     if (result == expected) {
-            printf("Test Case %d: PASSED\n", testNum);
-        } else {
-            printf("Test Case %d: FAILED (Expected %d, Got %d)\n", testNum, expected, result);
-            free(nums);
-            fclose(file);
-            return 1; 
+    printf("Test Case %d: PASSED...\n", testNum);
+    }
+    else {
+    printf("Test Case %d: FAILED...\n", testNum);
+    }
         }
 
         free(nums);
