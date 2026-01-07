@@ -6,7 +6,7 @@ void run_tests(const char* filename) {
     FILE* file = fopen(filename, "r");
     if (!file) {
         printf("Error: Could not open %s\n", filename);
-        exit(1); // Arrête tout si le fichier est absent
+        exit(1); 
     }
 
     int n, k, expected, testNum = 1;
