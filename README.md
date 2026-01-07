@@ -62,7 +62,7 @@ The solution uses a **Prefix Sum** strategy combined with a **Hash Map** to achi
 
 ### Prerequisites
 - A C compiler (e.g., `gcc` or `clang`)  
-- A main test file (e.g., `main.c`) that includes the solution
+- A main test file (e.g., `tester.c`) that includes the solution
 
 ### Compilation
 
