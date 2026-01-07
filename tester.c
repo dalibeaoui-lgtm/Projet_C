@@ -11,7 +11,7 @@ void run_tests(const char* filename) {
 
     int n, k, expected, testNum = 1;
 
-    // On lit n et k. Si fscanf renvoie 2, c'est qu'il a trouvé les deux nombres.
+    
     while (fscanf(file, "%d %d", &n, &k) == 2) {
         int* nums = malloc(sizeof(int) * n);
         for (int i = 0; i < n; i++) {
@@ -27,10 +27,10 @@ void run_tests(const char* filename) {
             printf("Test Case %d: FAILED (Expected %d, Got %d)\n", testNum, expected, result);
             free(nums);
             fclose(file);
-            exit(1); // <--- CRUCIAL : Force GitHub à afficher une CROIX ROUGE
+            exit(1);
         }
 
-        free(nums); // On libère la mémoire AVANT de passer au test suivant
+        free(nums); 
         testNum++;
     } // Fin du while
 
